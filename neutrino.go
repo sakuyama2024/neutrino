@@ -88,7 +88,7 @@ var (
 
 // isDevNetwork indicates if the chain is a private development network, namely
 // simnet or regtest/regnet.
-func isDevNetwork(net wire.BitcoinNet) bool {
+func isDevNetwork(net wire.AlphaNet) bool {
 	return net == chaincfg.SimNetParams.Net ||
 		net == chaincfg.RegressionNetParams.Net
 }
